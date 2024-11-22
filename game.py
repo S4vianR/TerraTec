@@ -1,3 +1,4 @@
+import os
 import pygame
 from PyOpenGLtoolbox import *
 from OpenGL.GL import *
@@ -5,8 +6,8 @@ from OpenGL.GLU import *
 from OpenGL.GLUT import *
 
 # Dimensiones de la pantalla
-anchopantalla = 1920
-altopantalla = 1080
+anchopantalla = 1440
+altopantalla = 1000
 
 # Textura seleccionada
 textura_seleccionada = ""
@@ -410,7 +411,7 @@ def inicializacion():
 
 
 if __name__ == '__main__':
-    glutInit()  # Initialize GLUT
+    # glutInit()  # Initialize GLUT
     pygame.init()
 
     # Cambia esta línea para permitir que la ventana sea redimensionable
