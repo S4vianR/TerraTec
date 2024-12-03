@@ -497,16 +497,16 @@ class CajaRompible:
         glPopMatrix()
 
         # Dibujar borde rojo si es trampa
-        if self.trampa:
-            glColor3f(1.0, 0.0, 0.0)  # Color rojo
-            glLineWidth(3)  # Ancho de línea
-            glBegin(GL_LINE_LOOP)
-            glVertex2f(self.x - self.lado / self.factor_x, self.y - self.lado / self.factor_y)
-            glVertex2f(self.x + self.lado / self.factor_x, self.y - self.lado / self.factor_y)
-            glVertex2f(self.x + self.lado / self.factor_x, self.y + self.lado / self.factor_y)
-            glVertex2f(self.x - self.lado / self.factor_x, self.y + self.lado / self.factor_y)
-            glEnd()
-            glColor3f(1.0, 1.0, 1.0)  # Reset color to white
+        # if self.trampa:
+        #     glColor3f(1.0, 0.0, 0.0)  # Color rojo
+        #     glLineWidth(3)  # Ancho de línea
+        #     glBegin(GL_LINE_LOOP)
+        #     glVertex2f(self.x - self.lado / self.factor_x, self.y - self.lado / self.factor_y)
+        #     glVertex2f(self.x + self.lado / self.factor_x, self.y - self.lado / self.factor_y)
+        #     glVertex2f(self.x + self.lado / self.factor_x, self.y + self.lado / self.factor_y)
+        #     glVertex2f(self.x - self.lado / self.factor_x, self.y + self.lado / self.factor_y)
+        #     glEnd()
+        #     glColor3f(1.0, 1.0, 1.0)  # Reset color to white
 
     def golpear(self):
         if self.estado == "saludable":
